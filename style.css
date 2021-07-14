@@ -10,10 +10,12 @@ common utilities
 body{
     margin: 0;
     padding: 0;
+    background-color: linen;
 }
 main{
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    
 }
 .container{
     margin-top: 70px;
@@ -129,27 +131,52 @@ main{
 /* --------------------------
 Fixture styles 
 --------------------------------------*/
+.container-fix h2{
+    text-align:center;
+    color: blue;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container-fix{
+    background-color:rgba(104, 100, 40, 0.623);
+}
+.fixture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo img{
-    width: 650px;
-    height: 500px;
+    width: 600px;
+    height: 450px;
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 500px 300px 300px;
+    grid-template-columns: 160px 80px 160px 200px;
+    grid-template-rows: 60px 60px 60px 60px;
+    align-items: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    margin-right: 200px;
+    background-color: rgba(71, 61, 139, 0.781);
 }
 .grid-cell{
-    border: 1px solid groove;
+    color:gold;
+    font-size: 1.5em;
+    margin:auto;
+    padding:5px;
 }
 /*----------------- footer styles----------- */
 footer{
-    width: 483.87px;
-    height: 204px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 425px;
-    margin-top: 100px;
+    background-color: khaki;
+    margin-top: 50px;
 }
 footer img{
     width:484px;
