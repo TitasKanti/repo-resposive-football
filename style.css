@@ -82,7 +82,7 @@ main{
     height: 256px;
 }
 .player{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -108,7 +108,7 @@ main{
 }
 /* -------------------------- Highlights style     -----------------  */
 .highlights{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,10 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+}
+.video{
+    width: 300px;
+    height: 200px;
 }
 /* --------------------------
 Fixture styles 
@@ -170,7 +174,6 @@ Fixture styles
 }
 /*----------------- footer styles----------- */
 footer{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,4 +196,30 @@ footer p{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: gray;
+}
+/* --------------------------
+    Media Queries 
+----------------------*/
+
+/*----------------- Mobile Devices -------------*/
+@media only screen and(max-width: 688px) {
+    .container, .grid-container, .container-fix{
+        width: 100%;
+    }
+    .banner-items img{
+        width: 100%;
+    }
+    .banner-items{
+        width: 100%;
+    }
+
+    .banner-items, .player, .highlights, .fixture, footer{
+        flex-direction: column;
+    }
+    .players, .videos, .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video{
+        width: 100%;
+    }
 }
