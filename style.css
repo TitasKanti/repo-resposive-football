@@ -1,5 +1,6 @@
 /* ------------------  fonts   ------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* ------------------------------------
 common utilities
 -------------------------------- */
@@ -65,10 +66,10 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 180px;
 }
-.players img{
+.players .player img{
     width: 300px;
     height: 256px;
 }
@@ -82,8 +83,19 @@ main{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
 }
+.player-info{
+    width: 300px;
+    height: 154px;
+    padding: 0 15px;
+}
+.player-name{
+    font-size: 28px;
+    margin-top: 0, 3px;
+}
 .player-detail{
-    color: gray;
-    font-weight: 300;
-    font-size: 14px;
+    color: #6C6C6C;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 16px;
+    line-height: 20px;
+   
 }
